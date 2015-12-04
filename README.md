@@ -9,4 +9,6 @@
 
 ### Demo summary
 
-* Do_SliderTabBarController: TabBarController中实现滑动动画的Demo，使用percent driver实现。
+* Do_SliderTabBarController  : TabBarController中实现滑动动画的Demo，使用percent driver实现。
+* Do_SliderTabBarController2 : TabBarController中实现滑动动画的Demo，使用遵循UIViewControllerInteractiveTrans
+itioning协议实现，非percent driver
