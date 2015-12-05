@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DO_POPUPWindow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90t-Vr-fd8">
+                                <rect key="frame" x="275.5" y="550" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.80236360023663" green="1" blue="0.85566003150496539" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Prl-el-wYg"/>
+                                    <constraint firstAttribute="height" constant="30" id="hmo-Jq-L01"/>
+                                </constraints>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="IXg-hN-D4e" kind="presentation" id="Dna-Cq-UAC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43165756360000002" green="0.1151924294" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="90t-Vr-fd8" secondAttribute="bottom" constant="20" id="avm-r9-PcN"/>
+                            <constraint firstItem="90t-Vr-fd8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b1T-qa-fhK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="-45"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="hQe-5y-V6V">
+            <objects>
+                <viewController id="IXg-hN-D4e" customClass="ViewController2" customModule="DO_POPUPWindow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CZA-kI-u7X"/>
+                        <viewControllerLayoutGuide type="bottom" id="rXc-59-0Ou"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fqV-ch-fzm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hg-ah-gIq">
+                                <rect key="frame" x="250" y="270" width="100" height="60"/>
+                                <color key="backgroundColor" red="0.68123981093004393" green="1" blue="0.56561988941979791" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="NbH-Cc-OHn"/>
+                                    <constraint firstAttribute="height" constant="60" id="lrq-2S-VaV"/>
+                                </constraints>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="doCancel:" destination="IXg-hN-D4e" eventType="touchUpInside" id="yJK-UI-FTT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1333333333" green="0.64705882349999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Hg-ah-gIq" firstAttribute="centerX" secondItem="fqV-ch-fzm" secondAttribute="centerX" id="wo8-GA-hUx"/>
+                            <constraint firstItem="4Hg-ah-gIq" firstAttribute="centerY" secondItem="fqV-ch-fzm" secondAttribute="centerY" id="xEp-ZN-Brf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mc7-Un-9zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="-45"/>
+        </scene>
+    </scenes>
+</document>
