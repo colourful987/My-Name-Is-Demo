@@ -13,3 +13,4 @@
 * Do_SliderTabBarController2 : TabBarController中实现滑动动画的Demo，使用遵循UIViewControllerInteractiveTrans
 itioning协议实现，非percent driver
 * DO_POPUPWindow  : 简易弹窗，使用自定义Presentation Controller 和 Animation Controller实现。
+* DO_AdjustWhenKeyboardAppear : 使用slideView来实现键盘弹出时调整当前内容。（之后补充使用ScrollView来实现）
